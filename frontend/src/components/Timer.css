@@ -1,0 +1,76 @@
+.timer {
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 12px 20px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.timer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.timer-label {
+  font-size: 14px;
+  color: #6c757d;
+  font-weight: 500;
+}
+
+.timer-display {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2c3e50;
+  font-family: 'Courier New', monospace;
+}
+
+.timer-total {
+  font-size: 16px;
+  color: #6c757d;
+  font-family: 'Courier New', monospace;
+}
+
+.timer-progress {
+  width: 100%;
+  height: 4px;
+  background: #e9ecef;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.timer-progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #4a90e2, #357abd);
+  transition: width 1s linear, background 0.3s ease;
+  border-radius: 2px;
+}
+
+.timer-warning {
+  background: #fff3cd;
+  border-color: #ffc107;
+}
+
+.timer-warning .timer-display {
+  color: #856404;
+}
+
+.timer-warning .timer-progress-bar {
+  background: linear-gradient(90deg, #ffc107, #ff9800);
+}
+
+.timer-expired {
+  background: #f8d7da;
+  border-color: #dc3545;
+}
+
+.timer-expired .timer-display {
+  color: #721c24;
+}
+
+.timer-expired .timer-progress-bar {
+  background: linear-gradient(90deg, #dc3545, #c82333);
+}
